@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Sourabh Mishra | Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+
+/* NAVBAR */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(10px);
+display:flex;
+justify-content:center;
+gap:30px;
+padding:15px;
+z-index:1000;
+}
+
+nav a{
+color:#00e5ff;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00ff9d;
+}
+
+/* HERO */
+
+header{
+text-align:center;
+padding:150px 20px 70px;
+}
+
+.profile{
+width:180px;
+height:180px;
+border-radius:50%;
+border:5px solid #00e5ff;
+box-shadow:0 0 25px #00e5ff;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+header h1{
+font-size:50px;
+background:linear-gradient(90deg,#00e5ff,#00ff9d);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.tagline{
+font-size:22px;
+margin:15px 0;
+}
+
+.social-icons{
+margin-top:15px;
+}
+
+.social-icons a{
+color:white;
+margin:0 10px;
+font-size:22px;
+transition:.3s;
+}
+
+.social-icons a:hover{
+color:#00ff9d;
+}
+
+/* BUTTONS */
+
+.buttons a{
+text-decoration:none;
+padding:12px 25px;
+margin:10px;
+border-radius:30px;
+background:linear-gradient(90deg,#00e5ff,#00ff9d);
+color:#111;
+font-weight:bold;
+display:inline-block;
+transition:.3s;
+}
+
+.buttons a:hover{
+transform:scale(1.1);
+}
+
+/* SECTIONS */
+
+section{
+width:85%;
+margin:auto;
+padding:80px 0;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+color:#00e5ff;
+}
+
+/* ABOUT */
+
+#about{
+max-width:900px;
+margin:auto;
+line-height:1.8;
+}
+
+/* EDUCATION */
+
+.edu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.edu-card{
+background:#16242e;
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+}
+
+.edu-card:hover{
+transform:translateY(-8px);
+}
+
+.edu-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.edu-text{
+padding:15px;
+}
+
+/* SKILLS */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:#16242e;
+padding:20px;
+border-radius:12px;
+transition:.3s;
+}
+
+.skill-card:hover{
+transform:translateY(-6px);
+}
+
+/* PROJECTS */
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.project{
+background:#16242e;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-6px);
+}
+
+.project h3{
+color:#00ff9d;
+margin-bottom:10px;
+}
+
+/* CERTIFICATIONS */
+
+.card{
+background:#16242e;
+padding:30px;
+border-radius:15px;
+max-width:700px;
+margin:auto;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:40px;
+color:#aaa;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
+</nav>
+
+<header>
+
+<img src="profile.jpg" class="profile">
+
+<h1>Sourabh Mishra</h1>
+
+<p class="tagline">Python | Data Engineering | AWS | PySpark</p>
+
+<p>📞 +91-9628840322</p>
+<p>📧 sourabhmishra.knp@gmail.com</p>
+
+<div class="buttons">
+
+
+
+<a href="mailto:sourabhmishra.knp@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a>
+
+<a href="https://www.linkedin.com/in/sourabh-mishra-7a89051a7" target="_blank">
+<i class="fa-brands fa-linkedin"></i> LinkedIn
+</a>
+
+<a href="https://www.hackerrank.com/profile/sourabhmishra_k1" target="_blank">
+<i class="fa-brands fa-hackerrank"></i> HackerRank
+</a>
+
+<a href="resume.pdf" download><i class="fa-solid fa-download"></i> Resume</a>
+
+</div>
+
+</header>
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am a passionate Python developer with a strong interest in Data Engineering, Backend Development, and Cloud Computing. 
+I have hands-on experience working with technologies such as Python, FastAPI, SQL, AWS, and PySpark for building 
+data-driven applications and scalable backend services.
+</p>
+
+<br>
+
+<p>
+I enjoy working with large datasets, developing RESTful APIs, and building efficient data processing pipelines. 
+My technical skill set also includes Machine Learning and data analysis using libraries such as NumPy, Pandas, 
+Matplotlib, and Seaborn.
+</p>
+
+<br>
+
+<p>
+Additionally, I have experience in data visualization using tools like Power BI and Tableau to transform 
+complex data into meaningful insights.
+</p>
+
+<br>
+
+<p>
+Currently, I am focused on strengthening my expertise in scalable data pipelines, modern backend development, 
+and cloud-based data engineering solutions.
+</p>
+
+</section>
+
+<section id="education">
+
+<h2>Education</h2>
+
+<div class="edu-grid">
+
+<div class="edu-card">
+<img src="cdac.jpg">
+<div class="edu-text">
+<h3>PG-DBDA – CDAC Mumbai</h3>
+<p>Aug 2025 – Feb 2026</p>
+<p>CGPA – 7.2</p>
+</div>
+</div>
+
+<div class="edu-card">
+<img src="psit.jpg">
+<div class="edu-text">
+<h3>MCA – PSIT Kanpur</h3>
+<p>Jul 2022 – Jun 2024</p>
+<p>CGPA – 7.4</p>
+</div>
+</div>
+
+<div class="edu-card">
+<img src="mpgi.jpg">
+<div class="edu-text">
+<h3>BCA – MPGI Kanpur</h3>
+<p>Jul 2019 – Jun 2022</p>
+<p>CGPA – 6.4</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>Python & Libraries</h3>
+<p>NumPy, Pandas, Matplotlib, Seaborn</p>
+</div>
+
+<div class="skill-card">
+<h3>FastAPI</h3>
+<p>REST API Development</p>
+</div>
+
+<div class="skill-card">
+<h3>SQL / MySQL</h3>
+<p>Database Design & Queries</p>
+</div>
+
+<div class="skill-card">
+<h3>AWS Cloud</h3>
+<p>EC2, S3, Lambda, RDS, DynamoDB</p>
+</div>
+
+<div class="skill-card">
+<h3>Big Data</h3>
+<p>PySpark</p>
+</div>
+
+<div class="skill-card">
+<h3>MongoDB</h3>
+<p>NoSQL Database</p>
+</div>
+
+<div class="skill-card">
+<h3>Machine Learning</h3>
+<p>Model Development & Data Analysis</p>
+</div>
+
+<div class="skill-card">
+<h3>Visualization</h3>
+<p>Power BI</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-grid">
+
+<div class="project">
+<h3>YouTube Trending Videos Analysis</h3>
+<p>
+Analyzed trending YouTube video datasets across multiple countries to understand video performance 
+and audience engagement. Processed large-scale data using AWS and Databricks and performed 
+data analysis using Python and PySpark. Built interactive dashboards in Power BI to visualize 
+top trending videos, category-wise performance, engagement metrics, and country-wise trends.
+</p>
+</div>
+
+<div class="project">
+<h3>FastAPI Student Management API</h3>
+<p>
+Developed a RESTful backend application using FastAPI for managing student records with CRUD operations such as create,
+update, delete, and retrieve student data. Implemented request validation using Pydantic models.
+</p>
+</div>
+
+<div class="project">
+<h3>Snappy Chat Application</h3>
+<p>
+Designed and developed a real-time chat application that allows users to send and receive messages instantly.
+</p>
+</div>
+
+<div class="project">
+<h3>Image Captioning Generator</h3>
+<p>
+Built an end-to-end deep learning model that automatically generates captions for images using CNN-LSTM architecture.
+</p>
+</div>
+
+<div class="project">
+<h3>Mobile Mart Management System</h3>
+<p>
+Developed a management system for handling mobile store operations such as product inventory,
+sales tracking, and customer records.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="certifications">
+
+<h2>Certifications</h2>
+
+<div class="card">
+
+<ul>
+
+<li>Programming Fundamentals Using Python – Infosys</li>
+<li>SQL Basic – HackerRank</li>
+<li>Unstop Weekly Coding Challenge</li>
+<li>MS Office Certification</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Sourabh Mishra | Portfolio Website</p>
+
+</footer>
+
+</body>
+</html>
